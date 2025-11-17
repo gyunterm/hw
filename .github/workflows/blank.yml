@@ -1,0 +1,2535 @@
+#Блок 1
+# #1
+# import math
+# x=int(input())
+# y=3*x**2+math.sin(x+2)
+# print(y)
+
+
+#2
+# import math
+# x=int(input())
+# a=int(input())
+# y=a*x**2+math.cos(2*x+1)
+# print(y)
+
+#3
+# x,a,b=map(int,input().split())
+# y=a*x+b*math.sin(2*x+2)
+# print(y)
+
+
+# #4
+# x,a=map(int,input().split())
+# y=a*x**3+math.cos(3*x+1)
+# print(y)
+
+
+#5
+# x,a=map(int,input().split())
+# y=x**2/a+math.cos(2*x-1)
+# print(y)
+
+#6
+# x,a=map(int,input().split())
+# y=x/a+2*x**2
+# print(y)
+
+#7
+# x=int(input())
+# y=3*x**2-2*x+1
+# print(y)
+
+# 8
+# x=int(input())
+# y=0.5*x**2-3*x+1
+# print(y)
+
+
+#9
+# x,a=map(int,input().split())
+# y=1/(x**2+1)-a
+# print(y)
+
+#10
+# x,a=map(int,input().split())
+# y=a/(x**2+1)-math.cos(2*x-1)
+# print(y)
+
+#11
+# x=int(input())
+# y=x**3-2*x**2+4
+# print(y)
+
+
+#12
+# x,a,b=map(int,input().split())
+# y=a*x**2+b*x**3-8
+# print(y)
+
+
+#13
+# x,a,b=map(int,input().split())
+# y=a*(math.sqrt(x**2+4))-b
+# print(y)
+
+#14
+# x=int(input())
+# y=math.cos(2*x-1)+math.sin(x)
+# print(y)
+
+# 15
+# x,a,b=map(int,input().split())
+# y=a*math.sqrt(x)+b*x**2
+# print(y)
+
+# БЛОК2
+#1
+# a,b,c=map(int,input().split())
+# V=a*b*c
+# S=2*(a*b+b*c+a*c)
+# print(V,S)
+
+
+# 2
+# R=int(input())
+# L=2*math.pi*R
+# S=math.pi*R**2
+# print(L,S)
+
+#3
+# a, b = map(int, input().split())
+# c = math.sqrt(a ** 2 + b ** 2)
+# P = a + b + c
+# print(c, P)
+
+
+#4
+# R1,R2=map(int,input().split())
+# S1=math.pi*R1**2
+# S2=math.pi*R2**2
+# S3=S1-S2
+# print(S3)
+
+#5
+# x1,y1,x2,y2=map(int,input().split())
+# st1=x2-x1
+# st2=y2-y1
+# S=st1*st2
+# P=2*(st1+st2)
+# print(S,P)
+
+#6
+# x1,y1,x2,y2=map(int,input().split())
+# f=math.sqrt((x2-x1)**2+(y2-y1)**2)
+# print(f)
+
+#7
+# x1,y1,x2,y2,x3,y3=map(int,input().split())
+
+
+
+
+# Блок 2
+#1
+# a,b,c=map(int,input().split())
+# V=a*b*c
+# S=2*(a*b+b*c+a*c)
+# print(V,S)
+
+
+# 2
+# R=int(input())
+# L=2*math.pi*R
+# S=math.pi*R**2
+# print(L,S)
+
+#3
+# a, b = map(int, input().split())
+# c = math.sqrt(a ** 2 + b ** 2)
+# P = a + b + c
+# print(c, P)
+
+
+#4
+# R1,R2=map(int,input().split())
+# S1=math.pi*R1**2
+# S2=math.pi*R2**2
+# S3=S1-S2
+# print(S3)
+
+#5
+# x1,y1,x2,y2=map(int,input().split())
+# st1=x2-x1
+# st2=y2-y1
+# S=st1*st2
+# P=2*(st1+st2)
+# print(S,P)
+
+#6
+# x1,y1,x2,y2=map(int,input().split())
+# f=math.sqrt((x2-x1)**2+(y2-y1)**2)
+# print(f)
+
+#7
+# def rast(a1, a2, b1, b2):
+#     liner = math.sqrt((a2 - a1) ** 2 + (b2 - b1) ** 2)
+#     return liner
+#
+#
+# x1, y1, x2, y2, x3, y3 = map(int, input().split())
+# st1 = rast(x1, x2, y1, y2)
+# st2 = rast(x2, x3, y2, y3)
+# st3 = rast(x1, x3, y1, y3)
+# polper = (st1 + st2 + st3) / 2
+# Per = st1 + st2 + st3
+# S = math.sqrt(polper * (polper - st1) * (polper - st2) * (polper - st3))
+# print(Per, S)
+
+#8
+# tempF = int(input())
+# tempC = (tempF - 32) * 5 / 9
+# print(tempC)
+
+
+#9
+# for i in range(50):
+#     x, a, y, b = map(int, input().split())
+#     choc = 1 * a
+#     iris = 1 * b
+#     raz = choc / iris
+#     print(choc, iris, raz)
+
+
+#10
+# a1, a2, b1, b2, c1, c2 = map(int, input().split())
+# d = a1 * b2 - a2 * b1
+# x = (c1 * b2 - c2 * b1) / d
+# y = (a1 * c2 - a2 * c1) / d
+# print(x, y)
+
+#11
+# alf = int(input())
+# alfrad = alf * math.pi / 180
+# print(alfrad)
+
+
+#12
+# v1, v2, pyt, t = map(int, input().split())
+# s2 = t * (v1 + v2)
+# obS = pyt + s2
+# print(obS)
+
+#13
+# a, b, c = map(int, input().split())
+# ac = abs(c - a)
+# bc = abs(c - b)
+# sums = ac + bc
+# print(ac, bc, sums)
+
+
+#14
+# a, b = map(int, input().split())
+# a2 = a ** 2
+# b2 = b ** 2
+# sums = a2 + b2
+# razn = a2 - b2
+# proiz = a2 * b2
+# dels = a2 / b2
+# print(sums, razn, proiz, dels)
+
+#15
+# vtech, vkater, t1, t2 = map(int, input().split())
+# s1 = vkater * t1
+# s2 = (vkater - vtech) * t2
+# S = s1 + s2
+# print(S)
+
+
+
+
+#Блок 3
+#1
+# a, x = map(int, input().split())
+# if x > 0:
+#     y = a * x ** 2 + 1
+# else:
+#     y = a * x - 1
+# print(y)
+
+
+#2
+# a, x = map(int, input().split())
+# if x >= 1:
+#     y = a * x + 1
+# else:
+#     x ** 2 - 1
+# print(y)
+
+
+#3
+# a, x = map(int, input().split())
+# if x < 0:
+#     y = 3 * a ** 2
+# else:
+#     y = 4 * a * x - 1
+# print(y)
+
+
+# #4
+# a, x = map(int, input().split())
+# if x > 4:
+#     y = 2 * a ** 2
+# else:
+#     y = 3 * x - 1
+# print(y)
+
+
+#5
+# a, x = map(int, input().split())
+# if x > 2:
+#     y = 2 * a * x - 2
+# else:
+#     y = 3 * a ** 2 - 2 * x
+# print(y)
+
+
+#6
+# a, x = map(int, input().split())
+# if x > 1:
+#     y = 2 * a * x ** 2 - 1
+# else:
+#     y = x
+# print(y)
+
+#7
+# a, x = map(int, input().split())
+# if x > 2:
+#     y = x ** 2
+# else:
+#     y = 2 * a - 1
+# print(y)
+
+#8
+# x = int(input())
+# if x > 2:
+#     y = math.cos(2 * x - 1)
+# else:
+#     y = math.sin(3 * x + 1)
+# print(y)
+
+#9
+# x = int(input())
+# if x > 2:
+#     y = 2 * x ** 3 - 2 * x - 1
+# else:
+#     y = 3 * x ** 2 - 2 * x + 1
+# print(y)
+
+#10
+# a, x = map(int, input().split())
+# if x > 1:
+#     y = 2 * a * x ** 2 - 1
+# else:
+#     y = 1 / a
+# print(y)
+
+
+#11
+# a, x = map(int, input().split())
+# if x >= 0:
+#     y = a * math.sqrt(x) + 1
+# else:
+#     y = a * x - 1
+# print(y)
+
+
+# #12
+# a, x = map(int, input().split())
+# if x >= 0:
+#     y = math.sqrt(x) + a
+# else:
+#     y = a / x - 1
+# print(y)
+
+#13
+# a, x = map(int, input().split())
+# if x > 0:
+#     y = 1 / x + a
+# else:
+#     y = x ** 2 - 1
+# print(y)
+
+
+#14
+# x = int(input())
+# if x > math.pi / 2:
+#     y = math.cos(x)
+# else:
+#     y = math.sin(x)
+# print(y)
+
+#15
+# x = int(input())
+# if x > 2:
+#     y = math.sqrt(x - 2)
+# else:
+#     y = (x - 2) ** 2 + 1
+# print(y)
+
+
+
+
+#Блок 4
+#1
+# k, n = map(int, input().split())
+# while n > 0:
+#     print(k)
+#     n -= 1
+
+#2
+# a, b = map(int, input().split())
+# cnt = 0
+# for i in range(a, b + 1):
+#     print(i)
+#     cnt += 1
+# print(cnt)
+
+#3
+# a, b = map(int, input().split())
+# cnt = 0
+# for i in range(b - 1, a, -1):
+#     print(i)
+#     cnt += 1
+# print(cnt)
+
+#4
+# c = 20.4
+# for i in range(1, 11):
+#     print(i, '-', i * c)
+
+
+#5
+# a, b, h = map(int, input().split())
+# for i in range(a, b, h):
+#     print(i ** 2)
+
+
+#6
+# a, b, h = map(int, input().split())
+# for i in range(a, b, h):
+#     if i >= 0:
+#         print(i)
+
+#7
+
+# a, b = map(int, input().split())
+# sumc = 0
+# for i in range(a, b + 1):
+#     sumc += i
+# print(sumc)
+
+
+#8
+# a, b = map(int, input().split())
+# sumc = 1
+# for i in range(a, b + 1):
+#     sumc *= i
+# print(sumc)
+
+#9
+# a, b = map(int, input().split())
+# sumc = 0
+# for i in range(a, b + 1):
+#     sumc += i ** 2
+# print(sumc)
+
+
+# #10
+# n = float(input())
+# for weight in range(12, 22, 2):
+#     weight /= 10
+#     cost = n * weight
+#     print(weight, '-', cost)
+
+#11
+# n = int(input())
+# sq = 0
+# for i in range(n):
+#     sq += (2 * i + 1)
+# print(sq)
+
+#12
+# a, n = map(float, input().split())
+# i = 0
+# while a**i < n:
+#     print(a**i, end=' ')
+#     i += 1
+
+
+#13
+# n = int(input())
+# maxi = 1
+# for i in range(1, n + 1):
+#     if i ** 2 <= n:
+#         maxi = i ** 2
+# print(maxi)
+
+#14
+# n = int(input())
+# maxk = 1
+# for k in range(1, n + 1):
+#     if 3 ** k < n:
+#         maxk = k
+# print(maxk)
+
+#15
+# n = int(input())
+# a, b = map(float, input().split())
+# lined = (b - a) / n
+# print(lined)
+# for i in range(0, int(b - a)):
+#     print(a + lined * i)
+
+
+
+
+
+#блок 5
+#1
+# n = int(input())
+# sumd = 0
+# for i in range(1, n + 1):
+#     sumd += 1 / (2 ** i)
+# print(sumd)
+
+#2
+# import math
+#
+# n = int(input())
+# x = float(input())
+# sumd = 0
+# for i in range(1, n + 1):
+#     sumd += (math.cos(x)) ** n / n
+# print(sumd)
+
+
+#3
+# n = int(input())
+# sumd = 0
+# for i in range(0, n + 1):
+#     sumd += (-1) ** i * 3 ** i
+# print(sumd)
+
+
+#4
+# import math
+#
+# n = int(input())
+# sumd = 0
+# for i in range(1, n + 1):
+#     sumd += 1 / (math.sin(i))
+# print(sumd)
+
+
+#5
+# n = int(input())
+# sumd = 0
+# for i in range(1, n + 1):
+#     sumd += ((-1) ** (i + 1)) * i ** 3
+# print(sumd)
+
+#6
+# import math
+#
+# n = int(input())
+# sumd = 0
+# for i in range(1, n + 1):
+#     sumd += (-1) ** (i + 1) * math.cos(i)
+# print(sumd)
+
+
+#7
+import math
+
+# n = int(input())
+# x = float(input())
+# sumd = 0
+# if abs(x) < 1:
+#     for i in range(1, n + 1):
+#         sumd += ((-1) ** (i - 1) * x ** i) / i
+# else:
+#     print('Error')
+# print(sumd)
+
+
+#8
+# import math
+#
+# n = int(input())
+# sumd = 0
+# for i in range(1, n + 1):
+#     sumd += (-1) ** (i + 1) * math.factorial(i)
+# print(sumd)
+
+#9
+# import math
+#
+# n = int(input())
+# x = float(input())
+# sumd = 0
+# for i in range(1, n + 1):
+#     sumd += math.sin(x ** i)
+# print(sumd)
+
+#10
+# import math
+#
+# n = int(input())
+# sumd = 0
+# for i in range(1, n + 1):
+#     sumd += 1 / math.factorial(i)
+# print(sumd)
+
+
+#11
+# import math
+#
+# n = int(input())
+# s = 0
+# for i in range(n):
+#     s += (n + i) ** 2
+# print(s)
+
+
+#12
+# import math
+#
+# n = int(input())
+# sumd = 0
+# for i in range(1, n + 1):
+#     sumd += math.factorial(i)
+# print(sumd)
+
+#13
+# import math
+#
+# n = int(input())
+# x = float(input())
+# sumd = 0
+# for i in range(n + 1):
+#     sumd += (x ** i) / (math.factorial(i))
+# print(sumd)
+
+#14
+# import math
+#
+# n = int(input())
+# x = float(input())
+# sumd = 0
+# for i in range(0, n + 1):
+#     sumd += (-1) ** i * x ** i
+# print(sumd)
+
+
+#15
+# import math
+#
+# n = int(input())
+# x = float(input())
+# sumd = 0
+# for i in range(n + 1):
+#     p = 2 * i + 1
+#     sy = (-1) ** i
+#     sumd += sy * (x ** p) / p
+# print(sumd)
+
+
+
+
+#блок 6
+#1
+# import math
+#
+# a = []
+# n = int(input())
+# for i in range(n):
+#     element = int(input())
+#     a.append(element)
+# k, l = map(int, input().split())
+# if not (1 <= k <= l <= n):
+#     print('error')
+# masa2 = a[k - 1:l]
+# sumel = sum(masa2)
+# countel = len(masa2)
+# srarif = sumel / countel
+# print(srarif)
+
+
+#2
+# import math
+#
+# a = []
+# n = int(input())
+# for i in range(n):
+#     element = int(input())
+#     a.append(element)
+# k, l = map(int, input().split())
+# if not (1 <= k <= l <= n):
+#     print('error')
+# masa2 = a[k - 1:l]
+# sumel = sum(masa2)
+# suma = sum(a)
+# razn = suma - sumel
+# print(razn)
+
+#3
+#1
+# import math
+#
+# a = []
+# n = int(input())
+# for i in range(n):
+#     element = int(input())
+#     a.append(element)
+# k, l = map(int, input().split())
+# if not (1 <= k <= l <= n):
+#     print('error')
+# del a[k - 1:l]
+# print(a)
+# sumel = sum(a)
+# countel = len(a)
+# srarif = sumel / countel
+# print(srarif)
+
+#4
+# a = [0, 1, 2, 3, 4, 5]
+# chet = []
+# nechet = []
+# for i in range(0, len(a)):
+#     if a[i] % 2 == 0:
+#         chet.append(a[i])
+#     else:
+#         nechet.append(a[i])
+# nechet.reverse()
+# maxar = chet + nechet
+# print(maxar)
+
+#5
+# a = [0, 1, 2, 3, 4, 5]
+#
+# for i in range(0, len(a), 2):
+#     print(a[i], end=' ')
+# for i in range(1, len(a), 2):
+#     print(a[i], end=' ')
+
+#6
+# a = [0, 6, 2, 3, 4, 5]
+# maxel = max(a)
+# r = a.index(maxel)
+# del a[0:r + 1]
+# prod = 1
+# for i in range(len(a)):
+#     prod *= a[i]
+# print(prod)
+
+#7
+# a = [3, 1, 2, 3, 4, 7]
+# maxel = max(a)
+# minel = min(a)
+# r = a.index(maxel)
+# l = a.index(minel)
+# if r - l > 0:
+#     masa = a[l:r + 1]
+# else:
+#     masa = a[r:l + 1]
+# print(masa)
+# suma = sum(masa)
+# print(suma)
+
+#8
+# a = [3, 1, 2, 3, 4, 7]
+# maxel = max(a)
+# minel = min(a)
+# r = a.index(maxel)
+# l = a.index(minel)
+# start = min(r, l)
+# finish = max(l, r)
+# for i in range(start + 1, finish):
+#     a[i] = 0
+# print(a)
+
+#9
+# a = [0, 1, 2, 3, 4, 5]
+# n = int(input())
+# chet = []
+# nechet = []
+# for i in range(0, len(a)):
+#     if a[i] % 2 == 0:
+#         a[i] = a[i] * n
+# print(a)
+
+#10
+# a = [0, 1, 2, 3, 4, 5]
+# for i in range(0, len(a)):
+#     if a[i] % 2 != 0:
+#         a[i] = a[i] * 0
+# print(a)
+
+
+#11
+# a = [0, 1, 2, 3, 4, 5]
+# chet = []
+# for i in range(0, len(a)):
+#     if i % 2 == 0:
+#         chet.append(a[i])
+# rez = min(chet)
+# print(rez)
+
+#12
+# a = [0, 8, 5, 3, 4, 5]
+# rez = []
+# cnt = 0
+# for i in range(0, len(a) - 1):
+#     if a[i] > a[i + 1]:
+#         rez.append(i)
+#         cnt += 1
+# print(rez)
+# print(cnt)
+
+#13
+# a = [0, 8, 5, 3, 4, 5]
+# rez = []
+# maxsum = 0
+# maxel1 = 0
+# maxel2 = 0
+# for i in range(0, len(a) - 1):
+#     if a[i] + a[i + 1] > maxsum:
+#         maxsum = a[i] + a[i + 1]
+#         maxel1 = a[i]
+#         maxel2 = a[i + 1]
+# sd = []
+# sd.append(maxel1)
+# sd.append(maxel2)
+# print(sd)
+
+#14
+# a = [0, 8, 5, 3, 4, 5]
+# minind = a.index(min(a))
+# maxind = a.index(max(a))
+# a[minind], a[maxind] = a[maxind], a[minind]
+# print(a)
+
+#15
+# n, a, b = map(int, input().split())
+# rez = [a, b]
+# for i in range(2, n):
+#     nexel = sum(rez)
+#     rez.append(nexel)
+# print(rez)
+
+
+
+
+ #Блок 7
+ #1
+# def t(lst):
+#     return sorted([x for x in lst if x % 2 != 0], reverse=True)
+# numbers = [5, 2, 13, 8, 7, 20, 15, 3, 10, 25]
+# result = t(numbers)
+# print("Нечетные числа по убыванию:", result)
+
+ #2
+# def t(lst):
+#     return sorted([x for x in lst if x > 0])
+# numbers = [5, -2, 13, 8, -7, 20, 15, 3, -10, 25]
+# result = t(numbers)
+# print("Положительные числа по возрастанию:", result)
+
+ #3
+# def t(lst):
+#     return sorted([x for x in lst if x > 0], reverse=True)
+# numbers = [5, -2, 13, 8, -7, 20, 15, 3, -10, 25]
+# result = t(numbers)
+# print("Положительные числа по убыванию:", result)
+
+ #4
+# def t(lst):
+#     return sorted([x for x in lst if x % 2 == 0])
+# numbers = [5, 2, 13, 8, 7, 20, 15, 3, 10, 25]
+# result = t(numbers)
+# print("Четные числа по возрастанию:", result)
+
+ #5
+# def t(lst, k):
+#     return sorted([x for x in lst if x > k], reverse=True)
+# numbers = [5, 2, 13, 8, 7, 20, 15, 3, 10, 25]
+# k = 10
+# result = t(numbers, k)
+# print(f"Числа больше {k} по убыванию:", result)
+
+ #6
+# def t(lst):
+#     return sorted([x for x in lst if x > 10])
+# numbers = [5, 2, 13, 8, 7, 20, 15, 3, 10, 25]
+# result = t(numbers)
+# print("Числа больше 10 по возрастанию:", result)
+
+ #7
+# def t(lst):
+#     return sorted([x for x in lst if x % 5 == 0], reverse=True)
+# numbers = [5, 2, 13, 8, 7, 20, 15, 3, 10, 25]
+# result = t(numbers)
+# print("Числа кратные 5 по убыванию:", result)
+
+ #8
+# def t(lst, k):
+#     return sorted([x for x in lst if x < k])
+# numbers = [5, 2, 13, 8, 7, 20, 15, 3, 10, 25]
+# k = 10
+# result = t(numbers, k)
+# print(f"Числа меньше {k} по возрастанию:", result)
+
+ #9
+# def t(lst):
+#     return sorted([x for x in lst if x < 15], reverse=True)
+# numbers = [5, 2, 13, 8, 7, 20, 15, 3, 10, 25]
+# result = t(numbers)
+# print("Числа меньше 15 по убыванию:", result)
+
+ #10
+# def t(lst):
+#     return sorted([x for x in lst if x % 3 == 0])
+# numbers = [5, 2, 13, 8, 7, 20, 15, 3, 10, 25, 12]
+# result = t(numbers)
+# print("Числа кратные 3 по возрастанию:", result)
+
+ #11
+# def t(lst, k):
+#     return sorted([x for x in lst if x % k == 0], reverse=True)
+# numbers = [5, 2, 13, 8, 7, 20, 15, 3, 10, 25, 12]
+# k = 4
+# result = t(numbers, k)
+# print(f"Числа кратные {k} по убыванию:", result)
+
+#12
+# def t(lst):
+#     return sorted([x for x in lst if x < 0])
+# numbers = [5, -2, 13, -8, 7, 20, -15, 3, -10, 25]
+# result = t(numbers)
+# print("Отрицательные числа по возрастанию:", result)
+
+#13
+# def t(lst):
+#     return sorted([lst[i] for i in range(len(lst)) if i % 2 != 0], reverse=True)
+# numbers = [5, 2, 13, 8, 7, 20, 15, 3, 10, 25]
+# result = t(numbers)
+# print("Числа на нечетных позициях по убыванию:", result)
+
+#14
+# def t(lst):
+#     return sorted([x for x in lst if 10 <= abs(x) <= 99])
+# numbers = [5, 2, 13, 8, 7, 20, 15, 3, 10, 25, 100, -15, -5]
+# result = t(numbers)
+# print("Двузначные числа по возрастанию:", result)
+
+#15
+# def t(lst):
+#     return sorted([lst[i] for i in range(len(lst)) if i % 2 == 0])
+# numbers = [5, 2, 13, 8, 7, 20, 15, 3, 10, 25]
+# result = t(numbers)
+# print("15. Числа на четных позициях по возрастанию:", result)
+
+
+#Блок 8
+#1
+# def t(matrix):
+#     for j in range(len(matrix[0])):
+#         all_odd = True
+#         for i in range(len(matrix)):
+#             if matrix[i][j] % 2 == 0:
+#                 all_odd = False
+#                 break
+#         if all_odd:
+#             return j + 1
+#     return 0
+# matrix = [[1, 2, 3], [3, 4, 5], [5, 6, 7]]
+# print(t(matrix))
+
+
+#2
+# def t(matrix):
+#     result = []
+#     for row in matrix:
+#         new_row = row.copy()
+#         min_val = min(new_row)
+#         max_val = max(new_row)
+#         min_idx = new_row.index(min_val)
+#         max_idx = new_row.index(max_val)
+#         new_row[min_idx], new_row[max_idx] = max_val, min_val
+#         result.append(new_row)
+#     return result
+# matrix = [[3, 1, 4], [5, 2, 8], [7, 6, 9]]
+# print(t(matrix))
+
+
+#3
+# def t(matrix):
+#     min_val = matrix[0][0]
+#     max_val = matrix[0][0]
+#     min_row_idx = 0
+#     max_row_idx = 0
+#     for i in range(len(matrix)):
+#         for j in range(len(matrix[0])):
+#             if matrix[i][j] < min_val:
+#                 min_val = matrix[i][j]
+#                 min_row_idx = i
+#             if matrix[i][j] > max_val:
+#                 max_val = matrix[i][j]
+#                 max_row_idx = i
+#     result = [row[:] for row in matrix]
+#     result[min_row_idx], result[max_row_idx] = result[max_row_idx], result[min_row_idx]
+#     return result
+# matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# print(t(matrix))
+
+
+#4
+# def t(matrix):
+#     return matrix[::-1]
+# matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# print(t(matrix))
+
+
+#5
+# def t(matrix):
+#     min_val = matrix[0][0]
+#     min_row_idx = 0
+#     for i in range(len(matrix)):
+#         for j in range(len(matrix[0])):
+#             if matrix[i][j] < min_val:
+#                 min_val = matrix[i][j]
+#                 min_row_idx = i
+#     return [row for i, row in enumerate(matrix) if i != min_row_idx]
+# matrix = [[5, 2, 3], [4, 1, 6], [7, 8, 9]]
+# print(t(matrix))
+
+
+#6
+# def t(matrix):
+#     max_val = matrix[0][0]
+#     max_col_idx = 0
+#     for i in range(len(matrix)):
+#         for j in range(len(matrix[0])):
+#             if matrix[i][j] > max_val:
+#                 max_val = matrix[i][j]
+#                 max_col_idx = j
+#     result = []
+#     for row in matrix:
+#         new_row = [row[k] for k in range(len(row)) if k != max_col_idx]
+#         result.append(new_row)
+#     return result
+# matrix = [[1, 2, 9], [4, 5, 6], [7, 8, 3]]
+# print(t(matrix))
+
+
+#7
+# def t(matrix):
+#     return [row[::-1] for row in matrix]
+# matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# print(t(matrix))
+#
+#
+# #8
+# def t(matrix):
+#     max_val = matrix[0][0]
+#     max_row_idx = 0
+#     for i in range(len(matrix)):
+#         for j in range(len(matrix[0])):
+#             if matrix[i][j] > max_val:
+#                 max_val = matrix[i][j]
+#                 max_row_idx = i
+#     result = matrix.copy()
+#     result.insert(max_row_idx, matrix[max_row_idx][:])
+#     return result
+# matrix = [[1, 2, 3], [4, 5, 9], [7, 8, 6]]
+# print(t(matrix))
+#
+#
+# #9
+# def t(matrix):
+#     result = []
+#     for j in range(len(matrix[0])):
+#         column = [matrix[i][j] for i in range(len(matrix))]
+#         avg = sum(column) / len(column)
+#         count = 0
+#         for val in column:
+#             if val > avg:
+#                 count += 1
+#         result.append(count)
+#     return result
+# matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# print(t(matrix))
+#
+#
+# #10
+# def t(matrix):
+#     rows = len(matrix)
+#     cols = len(matrix[0])
+#     result = [row[:] for row in matrix]
+#     for i in range(rows // 2):
+#         for j in range(cols // 2):
+#             result[i][j], result[i + rows // 2][j + cols // 2] = \
+#                 result[i + rows // 2][j + cols // 2], result[i][j]
+#     return result
+# matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
+# print(t(matrix))
+#
+#
+# #11
+# def t(matrix):
+#     result = []
+#     for i in range(0, len(matrix), 2):
+#         avg = sum(matrix[i]) / len(matrix[i])
+#         result.append(avg)
+#     return result
+# matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]]
+# print(t(matrix))
+#
+#
+# #12
+# def t(matrix):
+#     max_sum = sum(matrix[0])
+#     max_index = 0
+#     for i in range(1, len(matrix)):
+#         current_sum = sum(matrix[i])
+#         if current_sum > max_sum:
+#             max_sum = current_sum
+#             max_index = i
+#     return max_index + 1, max_sum
+# matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# print(t(matrix))
+#
+#
+# #13
+# def t(matrix):
+#     min_val = matrix[0][0]
+#     min_row_idx = 0
+#     for i in range(len(matrix)):
+#         for j in range(len(matrix[0])):
+#             if matrix[i][j] < min_val:
+#                 min_val = matrix[i][j]
+#                 min_row_idx = i
+#     result = matrix.copy()
+#     zero_row = [0] * len(matrix[0])
+#     result.insert(min_row_idx, zero_row)
+#     return result
+# matrix = [[5, 2, 3], [4, 1, 6], [7, 8, 9]]
+# print(t(matrix))
+#
+#
+# #14
+# def t(matrix):
+#     for i in range(len(matrix) - 1, -1, -1):
+#         all_even = True
+#         for j in range(len(matrix[0])):
+#             if matrix[i][j] % 2 != 0:
+#                 all_even = False
+#                 break
+#         if all_even:
+#             return i + 1
+#     return 0
+# matrix = [[1, 3, 5], [2, 4, 6], [8, 10, 12]]
+# print(t(matrix))
+#
+#
+# #15
+# def t(matrix):
+#     positive_cols = []
+#     for j in range(len(matrix[0])):
+#         all_positive = True
+#         for i in range(len(matrix)):
+#             if matrix[i][j] <= 0:
+#                 all_positive = False
+#                 break
+#         if all_positive:
+#             positive_cols.append(j)
+#     if not positive_cols:
+#         return matrix
+#     last_positive_col = positive_cols[-1]
+#     if last_positive_col == 0:
+#         return matrix
+#     result = [row[:] for row in matrix]
+#     for i in range(len(matrix)):
+#         result[i][0], result[i][last_positive_col] = result[i][last_positive_col], result[i][0]
+#     return result
+# matrix = [[1, -2, 3], [4, -5, 6], [7, -8, 9]]
+# print(t(matrix))
+
+
+
+
+#Блок 9
+#1
+# def t(s):
+#     words = s.split()
+#     return len(words)
+# s = "Привет   мир"
+# print("Количество слов:", t(s))
+#
+#
+# #2
+# def t(s):
+#     words = s.split()
+#     count = 0
+#     for word in words:
+#         if word[0] == word[-1]:
+#             count += 1
+#     return count
+# s = "АННА МАМА ПАПА ТЕСТ"
+# print("Слова с одинаковыми первой и последней буквой:", t(s))
+#
+#
+# #3
+# def t(s):
+#     words = s.split()
+#     count = 0
+#     for word in words:
+#         if 'А' in word:
+#             count += 1
+#     return count
+# s = "МАМА ПАПА БРАТ КОТ ДРУГ"
+# print("Слова с буквой 'А':", t(s))
+#
+#
+# #4
+# def t(s):
+#     words = s.split()
+#     if not words:
+#         return 0
+#     return min(len(word) for word in words)
+# s = "кот собака слон мышь"
+# print("Длина самого короткого слова:", t(s))
+#
+#
+# #5
+# def task5(s):
+#     words = s.split()
+#     return ' '.join(words[::-1])
+# s = "один два три четыре пять"
+# print("Слова в обратном порядке:", task5(s))
+#
+#
+# #6
+# def t(s):
+#     words = s.split()
+#     return ' '.join(sorted(words))
+# s = "БАНАН ЯБЛОКО КЛУБНИКА ВИНОГРАД ЧЕРЕШНЯ"
+# print("Слова в алфавитном порядке:", t(s))
+#
+#
+# #7
+# def t(C, S, S0):
+#     result = ""
+#     for char in S:
+#         if char == C:
+#             result += S0
+#         result += char
+#     return result
+# C = 'а'
+# S = "банан"
+# S0 = "XX"
+# print("После вставки:", t(C, S, S0))
+#
+#
+# #8
+# def t(s):
+#     words = s.split()
+#     return ' '.join(words)
+# s = "Много   лишних    пробелов   здесь"
+# print("Без лишних пробелов:", t(s))
+#
+#
+# #9
+# def t(s):
+#     count = 0
+#     for char in s:
+#         if char.islower() and (char.isalpha()):
+#             count += 1
+#     return count
+# s = "Hello мир Test тест"
+# print("9. Количество строчных букв:", t(s))
+#
+#
+# #10
+# def t(s):
+#     words = s.split()
+#     if not words:
+#         return 0
+#     return max(len(word) for word in words)
+# s = "кот собака слон жираф"
+# print("Длина самого длинного слова:", t(s))
+#
+#
+# #11
+# def t(s):
+#     even_chars = s[1::2]
+#     odd_chars = s[0::2]
+#     return even_chars + odd_chars[::-1]
+# s = "Телеграмма"
+# print("Зашифрованная строка:", t(s))
+#
+#
+# #12
+# def t(S, N):
+#     stars = '*' * N
+#     return stars.join(S)
+# S = "ABC"
+# N = 3
+# print("Строка со звездочками:", t(S, N))
+#
+#
+# #13
+# def t(s):
+#     words = s.split()
+#     return '.'.join(words)
+# s = "раз два три четыре пять"
+# print("Слова через точки:", t(s))
+#
+#
+# #14
+# def t(s):
+#     filename = s.split('\\')[-1]
+#     name_without_ext = filename.split('.')[0]
+#     return name_without_ext
+# s = r"d:\ivanov\primer\prog.py"
+# print("Имя файла без расширения:", t(s))
+#
+#
+# #15
+# def t(s):
+#     words = s.split()
+#     if not words:
+#         return ""
+#     max_length = max(len(word) for word in words)
+#     for word in reversed(words):
+#         if len(word) == max_length:
+#             return word
+# s = "кот собака слон жираф тигр"
+# print("Самое длинное слово:", t(s))\
+
+
+
+#Блок 10
+#1
+# def t(s):
+#     freq = {}
+#     for char in s:
+#         freq[char] = freq.get(char, 0) + 1
+#     return freq
+# s = "hello"
+# print("Частота символов:", t(s))
+#
+#
+# #2
+# def t(s):
+#     if len(s) < 2:
+#         return "Длина строки меньше двух"
+#     return s[:2] + s[-2:]
+# s = "python"
+# print("Первые и последние два символа:", t(s))
+#
+#
+# #3
+# def t(s):
+#     if len(s) == 0:
+#         return s
+#     first_char = s[0]
+#     return first_char + s[1:].replace(first_char, '$')
+# s = "restart"
+# print("После замены:", t(s))
+#
+#
+# #4
+# def t(s1, s2):
+#     if len(s1) < 2 or len(s2) < 2:
+#         return "Строки слишком короткие"
+#     new_s1 = s2[:2] + s1[2:]
+#     new_s2 = s1[:2] + s2[2:]
+#     return new_s1 + " " + new_s2
+# s1 = "abc"
+# s2 = "xyz"
+# print("После обмена:", t(s1, s2))
+#
+#
+# #5
+# def t(s):
+#     if len(s) < 3:
+#         return s
+#     if s.endswith('ing'):
+#         return s + 'ly'
+#     return s + 'ing'
+# s1 = "read"
+# s2 = "reading"
+# print("После добавления:", t(s1))
+# print("После добавления:", t(s2))
+#
+#
+# #6
+# def t(s, n):
+#     result = ""
+#     for i in range(len(s)):
+#         if (i + 1) % n != 0:
+#             result += s[i]
+#     return result
+# s = "abcdefghij"
+# n = 3
+# print("После удаления каждого", n, "-го символа:", t(s, n))
+#
+#
+# #7
+# def t(s):
+#     if len(s) < 2:
+#         return s
+#     return s[-1] + s[1:-1] + s[0]
+# s = "python"
+# print("После замены:", t(s))
+#
+#
+# #8
+# def t(s):
+#     return s[::2]
+# s = "abcdef"
+# print("После удаления нечетных индексов:", t(s))
+#
+#
+# #9
+# def t(s):
+#     words = s.split()
+#     freq = {}
+#     for word in words:
+#         freq[word] = freq.get(word, 0) + 1
+#     return freq
+# s = "hello world hello python"
+# print("Частота слов:", t(s))
+#
+#
+#
+# def t(s):
+#     if len(s) % 4 == 0:
+#         return s[::-1]
+#     return s
+# s1 = "abcd"
+# s2 = "abc"
+# print("Для строки длиной 4:", t(s1))
+# print("Для строки длиной 3:", t(s2))
+#
+#
+# #11
+# def t(s):
+#     if len(s) < 4:
+#         return s
+#     upper_count = sum(1 for char in s[:4] if char.isupper())
+#     if upper_count >= 2:
+#         return s.upper()
+#     return s
+# s1 = "ABcdEf"
+# s2 = "AbcDef"
+# print("Результат:", t(s1))
+# print("Результат:", t(s2))
+#
+#
+# #12
+# def t(s):
+#     result = ""
+#     for char in s:
+#         if char.isalpha():
+#             if char.islower():
+#                 if char == 'z':
+#                     result += 'a'
+#                 else:
+#                     result += chr(ord(char) + 1)
+#             else:
+#                 if char == 'Z':
+#                     result += 'A'
+#                 else:
+#                     result += chr(ord(char) + 1)
+#         else:
+#             result += char
+#     return result
+# s = "Hello World!"
+# print("Зашифрованная строка:", t(s))
+#
+#
+# #13
+# def t(s):
+#     freq = {}
+#     for char in s:
+#         freq[char] = freq.get(char, 0) + 1
+#
+#     for char in s:
+#         if freq[char] == 1:
+#             return char
+#     return "Нет неповторяющихся символов"
+# s = "swiss"
+# print("Первый неповторяющийся символ:", t(s))
+#
+#
+# # 14
+# def t(s):
+#     words = s.split()
+#     result = []
+#     for word in words:
+#         if len(word) > 1:
+#             new_word = word[0].upper() + word[1:-1] + word[-1].upper()
+#         else:
+#             new_word = word.upper()
+#         result.append(new_word)
+#     return ' '.join(result)
+# s = "hello world python"
+# print("После преобразования:", t(s))
+#
+#
+# #15
+# def t(s):
+#     letters = [char for char in s if char.isalpha() and char.islower()]
+#     for i in range(1, len(letters)):
+#         if letters[i] < letters[i - 1]:
+#             # Находим позицию в исходной строке
+#             for j in range(len(s)):
+#                 if s[j] == letters[i]:
+#                     return j + 1
+#     return 0
+# s1 = "abc123"
+# s2 = "acb123"
+# print("Для упорядоченной строки:", t(s1))
+# print("Для неупорядоченной строки:", t(s2))
+
+
+
+#Блок 11
+#1а
+# def t(d):
+#     sorted_asc = dict(sorted(d.items(), key=lambda x: x[1]))
+#     sorted_desc = dict(sorted(d.items(), key=lambda x: x[1], reverse=True))
+#     return sorted_asc, sorted_desc
+# d = {1:2, 3:4, 4:3, 2:1, 0:0}
+# print("Сортировка по возрастанию и убыванию:", t(d))
+#
+# #1б
+# def t(d1, d2):
+#     result = d1.copy()
+#     for key, value in d2.items():
+#         result[key] = result.get(key, 0) + value
+#     return result
+# d1 = {1:2, 3:4}
+# d2 = {3:5, 6:7}
+# print("Объединение с суммированием:", t(d1, d2))
+#
+# #1в
+# def t(d, keys):
+#     return all(key in d for key in keys)
+# d = {1:2, 3:4}
+# keys = [1, 3]
+# print("Все ключи присутствуют:", t(d, keys))
+#
+# # 2а
+# def t(d, key, value):
+#     d[key] = value
+#     return d
+# d = {1:2, 3:4}
+# print("После добавления ключа:", t(d, 5, 6))
+#
+# #2б
+# def t(d):
+#     return set(d.values())
+# d = {1:2, 3:4, 5:2}
+# print("Уникальные значения:", t(d))
+#
+# #2в
+# def t(d):
+#     total = 0
+#     for value in d.values():
+#         if isinstance(value, list):
+#             total += len(value)
+#     return total
+# d = {1:[2,3,4], 3:[5,6,7], 5:[8,9,0]}
+# print("Всего элементов в списках:", t(d))
+#
+# #3а
+# def t(*dicts):
+#     result = {}
+#     for d in dicts:
+#         result.update(d)
+#     return result
+# dict1 = {1:2}
+# dict2 = {3:4}
+# dict3 = {5:6}
+# print("Объединенные словари:", t(dict1, dict2, dict3))
+#
+# #3б
+# def t(d):
+#     return dict(sorted(d.items(), key=lambda x: x[1]))
+# d = {1:2, 3:4, 4:3, 2:1, 0:0}
+# print("Отсортированный по значениям:", t(d))
+#
+# #3в
+# def t(d):
+#     for key in d:
+#         if isinstance(d[key], list):
+#             d[key] = []
+#     return d
+# d = {1:[2,3,4], 3:[5,6,7], 5:[8,9,0]}
+# print("После очистки списков:", t(d))
+#
+# #4а
+# def t(d, keys):
+#     return all(key in d for key in keys)
+# d = {1:2, 3:4}
+# keys = [1, 3]
+# print("Все ключи присутствуют:", t(d, keys))
+#
+# #4б
+# from itertools import permutations
+# def t(d, key):
+#     if key in d and isinstance(d[key], str):
+#         chars = list(d[key])
+#         return [''.join(p) for p in permutations(chars)]
+#     return []
+# d = {1: 'abc', 2: 'def'}
+# print("Комбинации букв:", t(d, 1)[:3])
+#
+# #4в
+# def t(d):
+#     result = {}
+#     for key, value in d.items():
+#         if isinstance(value, list):
+#             result[key] = sum(value) / len(value)
+#         else:
+#             result[key] = value
+#     return result
+# d = {1:[2,3,4], 3:[5,6,7], 5:[8,9,0]}
+# print("Средние значения:", t(d))
+#
+# #5а
+# def t(d):
+#     for key, value in d.items():
+#         print(f"{key}: {value}")
+# d = {1:2, 3:4, 5:6}
+# print("Обход словаря:")
+# t(d)
+#
+# #5б
+# def t(d):
+#     values = list(d.values())
+#     values.sort(reverse=True)
+#     return values[:3]
+# d = {1:2, 3:4, 5:6, 2:8, 4:1}
+# print("Три наибольших значения:", t(d))
+#
+# #5в
+# def t(d1, d2):
+#     result = {}
+#     for key in set(d1.keys()) & set(d2.keys()):
+#         result[key] = (d1[key], d2[key])
+#     return result
+# d1 = {1:2, 3:4}
+# d2 = {1:3, 3:4}
+# print("Сравнение значений:", t(d1, d2))
+#
+# #6а
+# def t(n):
+#     return {i: i*i for i in range(1, n+1)}
+# print("Словарь квадратов:", t(5))
+#
+# #6б
+# def t(dict_list):
+#     return [list(d.values())[0] for d in dict_list]
+# dict_list = [{1:2}, {3:4}, {5:6}]
+# print("Объединенные значения:", t(dict_list))
+#
+# #6в
+# def t(d):
+#     return {k: v for k, v in d.items() if v not in ['', None, []]}
+# d = {1:'', 2:'abc', 3:None, 4:[]}
+# print("Без пустых элементов:", t(d))
+#
+# #7а
+# def t():
+#     return {i: i*i for i in range(1, 16)}
+# print("Квадраты от 1 до 15:", t())
+#
+# #7б
+# def t(s):
+#     freq = {}
+#     for char in s:
+#         freq[char] = freq.get(char, 0) + 1
+#     return freq
+# s = "hello world"
+# print("Частота символов:", t(s))
+#
+# #7в
+# def t(d, min_value=3):
+#     return {k: v for k, v in d.items() if v >= min_value}
+# d = {'a':1, 'b':2, 'c':3, 'd':4}
+# print("Отфильтрованный словарь:", t(d))
+#
+# #8а
+# def t(d1, d2):
+#     return {**d1, **d2}
+# d1 = {'a':1, 'b':2}
+# d2 = {'c':3, 'd':4}
+# print("Объединенные словари:", t(d1, d2))
+#
+# #8б
+# def t(d):
+#     for key, value in d.items():
+#         print(f"{key} {value}")
+# d = {'a':1, 'b':2, 'c':3, 'd':4}
+# print("Словарь в виде таблицы:")
+# t(d)
+#
+# #8в
+# def t(*lists):
+#     result = {}
+#     for i, lst in enumerate(lists, 1):
+#         result[f'key{i}'] = lst
+#     return result
+# list1 = [1, 2, 3]
+# list2 = [4, 5, 6]
+# print("Списки как значения словаря:", t(list1, list2))
+#
+# #9а
+# def t(d):
+#     for key, value in d.items():
+#         print(f"key: {key}, value: {value}")
+# d = {'a':1, 'b':2, 'c':3, 'd':4}
+# print("Обход словаря:")
+# t(d)
+#
+# #9б
+# def t(dict_list, target_key):
+#     total = 0
+#     for d in dict_list:
+#         if target_key in d:
+#             total += d[target_key]
+#     return total
+# dict_list = [{'a': 1}, {'a': 2}, {'a': 3}, {'b': 1}]
+# print("Сумма значений по ключу 'a':", t(dict_list, 'a'))
+#
+# #9в
+# def t(students):
+#     return {name: {'рост': data['рост']} for name, data in students.items()}
+# students = {'Петя': {'рост':170, 'вес':70}, 'Михаил': {'рост':180, 'вес':75}}
+# print("Только данные о росте:", t(students))
+#
+# #10а
+# def t(d):
+#     return sum(d.values())
+# d = {'a':1, 'b':2, 'c':3, 'd':4}
+# print("Сумма всех значений:", t(d))
+#
+# #10б
+# def t(lst):
+#     return {item: {} for item in lst}
+# lst = ['a', 'b', 'c']
+# print("Список как ключи:", t(lst))
+#
+# #10в
+# def t(d):
+#     values = list(d.values())
+#     return len(set(values)) == 1
+# d1 = {'a':1, 'b':1, 'c':1}
+# d2 = {'a':1, 'b':2, 'c':1}
+# print("Все значения одинаковы:", t(d1))
+# print("Все значения одинаковы:", t(d2))
+#
+# #11а
+# def t(d):
+#     result = 1
+#     for value in d.values():
+#         result *= value
+#     return result
+# d = {'a':1, 'b':2, 'c':3, 'd':4}
+# print("Произведение всех значений:", t(d))
+#
+# #11б
+# def t(d):
+#     for key in d:
+#         if isinstance(d[key], list):
+#             d[key].sort()
+#     return d
+# d = {'a':['c', 'b', 'a'], 'b':['c', 'b', 'a']}
+# print("Отсортированные списки:", t(d))
+#
+# #11в
+# def t(pairs):
+#     result = {}
+#     for key, value in pairs:
+#         if key not in result:
+#             result[key] = []
+#         result[key].append(value)
+#     return result
+# pairs = [('a', 1), ('b', 2), ('a', 3), ('b', 4)]
+# print("Сгруппированные значения:", t(pairs))
+#
+# #12а
+# def t(d, key_to_remove):
+#     if key_to_remove in d:
+#         del d[key_to_remove]
+#     return d
+# d = {'a':1, 'b':2, 'c':3}
+# print("После удаления ключа 'b':", t(d, 'b'))
+#
+# #12б
+# def t(d):
+#     return {k.strip(): v for k, v in d.items()}
+# d = {' a ':1, ' b ':2, ' c ':3}
+# print("Ключи без пробелов:", t(d))
+#
+# #12в
+# def t(d):
+#     result = []
+#     for key, values in d.items():
+#         for value in values:
+#             result.append({key: value})
+#     return result
+# d = {'a': [1, 2], 'b': [3, 4]}
+# print("Список словарей:", t(d))
+#
+# #13а
+# def t(keys, values):
+#     return dict(zip(keys, values))
+# keys = ['a', 'b', 'c']
+# values = [1, 2, 3]
+# print("Словарь из списков:", t(keys, values))
+#
+# #13б
+# def t(items, n=3):
+#     sorted_items = sorted(items, key=lambda x: x['price'], reverse=True)
+#     return sorted_items[:n]
+# items = [
+#     {'name': 'item1', 'price': 10},
+#     {'name': 'item2', 'price': 50},
+#     {'name': 'item3', 'price': 30},
+#     {'name': 'item4', 'price': 40}
+# ]
+# print("Три самых дорогих товара:", t(items))
+#
+# #13в
+# def t(dict_list, dict_to_remove):
+#     return [d for d in dict_list if d != dict_to_remove]
+# dict_list = [{'a': 1}, {'b': 2}, {'c': 3}]
+# dict_to_remove = {'b': 2}
+# print("После удаления словаря:", t(dict_list, dict_to_remove))
+#
+# #14а
+# def t(d):
+#     return dict(sorted(d.items()))
+# d = {'b': 1, 'a': 2, 'c': 3}
+# print("Отсортированный по ключам:", t(d))
+#
+# #14б
+# def t(d):
+#     for key, value in d.items():
+#         print(f"key: {key}, value: {value}, item: ({key}, {value})")
+# d = {'a': 1, 'b': 2, 'c': 3}
+# print("Ключи, значения и элементы:")
+# t(d)
+#
+# #14в
+# def t(d):
+#     result = {}
+#     for key, value in d.items():
+#         try:
+#             if '.' in str(value):
+#                 result[key] = float(value)
+#             else:
+#                 result[key] = int(value)
+#         except ValueError:
+#             result[key] = value
+#     return result
+# d = {'a': '1', 'b': '2', 'c': '3.0', 'd': 'hello'}
+# print("Числовые значения:", t(d))
+#
+# #15а
+# def t(d):
+#     values = list(d.values())
+#     return max(values), min(values)
+# d = {'a': 1, 'b': 2, 'c': 3}
+# max_val, min_val = t(d)
+# print("Максимальное и минимальное:", f"max: {max_val}, min: {min_val}")
+#
+# #15б
+# def t(d):
+#     for key, value in d.items():
+#         print(f"key: {key}, value: {value}")
+# d = {'a': 1, 'b': 2, 'c': 3}
+# print("Ключи и значения:")
+# t(d)
+#
+# #15в
+# def t():
+#     d = {
+#         'x': list(range(11, 21)),
+#         'y': list(range(21, 31)),
+#         'z': list(range(31, 41))
+#     }
+#     result = {}
+#     for key, values in d.items():
+#         result[key] = values[4]  # 5-й элемент (индекс 4)
+#     return result
+# print("Пятые элементы списков:", t())
+
+
+#Блок 12
+#1а
+# def t():
+#     strings = input("Введите строки через запятую: ").split(',')
+#     return tuple(s.strip() for s in strings)
+#
+# #1б
+# def t(tpl):
+#     result = {}
+#     for s in tpl:
+#         upper_count = sum(1 for char in s if char.isupper())
+#         result[s] = upper_count
+#     return result
+# tpl = ('ABC', 'Test', 'hello')
+# print("Кортеж:", tpl)
+# print("Словарь с длиной заглавных:", t(tpl))
+#
+#
+# #2а
+# def t():
+#     return ("строка", 123, [1, 2, 3], 45.67, {"key": "value"})
+#
+# #2б
+# def t(tuple_list):
+#     strings = []
+#     numbers = []
+#     lists = []
+#     others = []
+#     for tpl in tuple_list:
+#         for item in tpl:
+#             if isinstance(item, str):
+#                 strings.append(item)
+#             elif isinstance(item, (int, float)):
+#                 numbers.append(item)
+#             elif isinstance(item, list):
+#                 lists.append(item)
+#             else:
+#                 others.append(item)
+#
+#     return strings, numbers, lists, others
+#
+#
+# tuple_list = [("abc", 1), ([1, 2], 3.14), ("test", [])]
+# print("Распакованные списки:", t(tuple_list))
+#
+#
+# #3а
+# def ta(numbers):
+#     tpl = tuple(numbers)
+#     return tpl[0] if tpl else None
+#
+# # 3б
+# def t(tpl):
+#     reversed_tpl = tpl[::-1]
+#     return tuple(x for x in reversed_tpl if not (isinstance(x, int) and x % 3 == 0))
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# print("Первый элемент:", ta(numbers))
+# print("Перевернутый без кратных 3:", t(tuple(numbers)))
+#
+#
+# #4а
+# def ta(tpl):
+#     if len(tpl) >= 3:
+#         var1, var2, var3 = tpl[0], tpl[1], tpl[2]
+#         return var1, var2, var3
+#     return "Кортеж слишком короткий"
+#
+# # 4б
+# def t(tuple_list):
+#     result = dict(tuple_list)
+#     return dict(sorted(result.items(), key=lambda x: x[1]))
+# tuple_list = [('a', 3), ('b', 1), ('c', 2)]
+# print("Распакованные переменные:", ta(('x', 'y', 'z')))
+# print("Отсортированный словарь:", t(tuple_list))
+#
+#
+# #5а
+# def ta(tpl, new_element):
+#     return tpl + (new_element,)
+#
+# #5б
+# def t(tpl):
+#     return tuple(str(x)[::-1] for x in tpl)
+# tpl = ('abc', 123, 'hello')
+# print("После добавления:", ta(tpl, 'new'))
+# print("С обратными строками:", t(tpl))
+#
+#
+# #6а
+# def ta(tpl, separator):
+#     return separator.join(str(x) for x in tpl)
+#
+# #6б
+# def t(tuple_list, new_value):
+#     result = []
+#     for tpl in tuple_list:
+#         if tpl and isinstance(tpl[-1], (int, float)):
+#             new_tpl = tpl[:-1] + (new_value,)
+#             result.append(new_tpl)
+#         else:
+#             result.append(tpl)
+#     return result
+# tpl = (1, 2, 3)
+# tuple_list = [(1, 2, 3), ('a', 'b', 5), ('x', 'y')]
+# print("С разделителем:", ta(tpl, '-'))
+# print("С замененным последним элементом:", t(tuple_list, 99))
+#
+#
+# #7а
+# def ta(tpl):
+#     if len(tpl) >= 4:
+#         return tpl[3], tpl[-4]
+#     return "Кортеж слишком короткий"
+#
+# #7б
+# import random
+# def t(tuple_list):
+#     result = []
+#     for tpl in tuple_list:
+#         if tpl:  # не пустой
+#             result.append(tpl)
+#         else:
+#             result.append((random.randint(1, 100), random.randint(1, 100)))
+#     return result
+# tpl = (1, 2, 3, 4, 5, 6, 7, 8)
+# tuple_list = [(1, 2), (), (3, 4), (), (5, 6)]
+# print("Четвертый с начала и с конца:", ta(tpl))
+# print("Без пустых кортежей:", t(tuple_list))
+#
+#
+# #8а
+# def ta(dict_list):
+#     return tuple(dict_list)
+#
+# #8б
+# def t(tpl):
+#     # Ищем словари с float значениями
+#     dicts_with_float = []
+#     for item in tpl:
+#         if isinstance(item, dict):
+#             for value in item.values():
+#                 if isinstance(value, float):
+#                     dicts_with_float.append(item)
+#                     break
+#     sorted_dicts = sorted(dicts_with_float,
+#                           key=lambda d: next(v for v in d.values() if isinstance(v, float)))
+#     return tuple(sorted_dicts[::-1])
+# dict_list = [{'a': 3.14}, {'b': 1.5}, {'c': 2.7}]
+# print("Кортеж словарей:", ta(dict_list))
+# print("Отсортированные словари:", t(ta(dict_list)))
+#
+#
+# #9а
+# def ta(tpl):
+#     seen = set()
+#     duplicates = set()
+#     for item in tpl:
+#         if item in seen:
+#             duplicates.add(item)
+#         else:
+#             seen.add(item)
+#     return tuple(duplicates)
+#
+# #9б
+# def t(lst):
+#     total = 0
+#     count = 0
+#     for item in lst:
+#         if isinstance(item, tuple):
+#             break
+#         if isinstance(item, (int, float)):
+#             total += item
+#             count += 1
+#     return count, total
+# tpl = (1, 2, 3, 2, 4, 3, 5)
+# lst = [1, 2, 3, (4, 5), 6, 7]
+# print("Повторяющиеся элементы:", ta(tpl))
+# print("Элементы до кортежа:", t(lst))
+#
+#
+# #10а
+# def ta(tpl, element):
+#     return tpl.count(element)
+#
+# #10б
+# def t(strings):
+#     return tuple(set(strings))
+# tpl = (1, 2, 3, 2, 4, 2, 5)
+# strings = ['apple', 'banana', 'apple', 'orange', 'banana']
+# print("Количество вхождений 2:", ta(tpl, 2))
+# print("Кортеж без повторений:", t(strings))
+#
+#
+# #11а
+# def ta(lst):
+#     return tuple(lst)
+#
+# # 11б. Перемножение четных чисел
+# def t(tpl):
+#     result = 1
+#     has_even = False
+#     for item in tpl:
+#         if isinstance(item, int) and item % 2 == 0:
+#             result *= item
+#             has_even = True
+#     return result if has_even else 0
+# lst = [1, 2, 3, 4, 5]
+# tpl = (1, 2, 3, 4, 5, 6)
+# print("Список в кортеж:", ta(lst))
+# print("Произведение четных чисел:", t(tpl))
+#
+#
+# #12а
+# def ta(tpl, element):
+#     return tuple(x for x in tpl if x != element)
+#
+# #12б
+# def t(tuple_of_tuples):
+#     result = []
+#     for tpl in tuple_of_tuples:
+#         numbers = [x for x in tpl if isinstance(x, (int, float)) and x > 5]
+#         if numbers:
+#             avg = sum(numbers) / len(numbers)
+#             result.append(avg)
+#     return tuple(result)
+# tpl = (1, 2, 3, 2, 4, 5)
+# tuple_of_tuples = ((1, 6, 7), (2, 8, 10), (3, 4, 5))
+# print("Без элемента 2:", ta(tpl, 2))
+# print("Средние значения > 5:", t(tuple_of_tuples))
+#
+#
+# #13а
+# def ta(tpl, start, end):
+#     slice_tpl = tpl[start:end]
+#     return tuple(x for x in slice_tpl if not isinstance(x, str))
+#
+# #13б
+# def t(tpl):
+#     result = []
+#     for item in tpl:
+#         if isinstance(item, str) and item.lstrip('-').isdigit():
+#             num = int(item)
+#             if num >= 0:
+#                 result.append(num)
+#     return tuple(result)
+# tpl = (1, 'abc', 3, '4', -5, '6')
+# print("Срез без строк:", ta(tpl, 0, 5))
+# print("Целые числа без отрицательных:", t(tpl))
+#
+#
+# #14а
+# def ta(tpl, element):
+#     if not isinstance(element, (int, float)):
+#         return "Элемент не является числом"
+#     numeric_indices = []
+#     for i, item in enumerate(tpl):
+#         if isinstance(item, (int, float)) and item == element:
+#             numeric_indices.append(i + 1)  # +1 для порядкового номера
+#     return tuple(numeric_indices) if numeric_indices else "Элемент не найден"
+#
+# #14б
+# def t(tpl):
+#     multiples_of_3 = [str(x) for x in tpl if isinstance(x, int) and x > 0 and x % 3 == 0]
+#     if multiples_of_3:
+#         return int(''.join(multiples_of_3))
+#     return 0
+#
+#
+# tpl = (1, 3, 5, 3, 7, 9, 2)
+# print("Порядковые номера числа 3:", ta(tpl, 3))
+# print("Большое число из кратных 3:", t(tpl))
+#
+#
+# #15а
+# def ta(tpl):
+#     strings = [x for x in tpl if isinstance(x, str)]
+#     return len(strings)
+#
+# #15б
+# def t(tuple_of_tuples, element):
+#     count = 0
+#     for tpl in tuple_of_tuples:
+#         count += tpl.count(element)
+#     return count
+# tpl = ('a', 1, 'b', 2, 'c', 'd')
+# tuple_of_tuples = ((1, 2, 3), (2, 4, 6), (3, 6, 9))
+# print("Количество строк в кортеже:", ta(tpl))
+# print("Количество вхождений 2:", t(tuple_of_tuples, 2))
+
+
+
+
+#Блок 13
+#1а
+# def t(sequence):
+#     digits = set()
+#     operations = set()
+#     letters_af = set()
+#     letters_xz = set()
+#     for char in sequence:
+#         if char.isdigit():
+#             digits.add(char)
+#         elif char in '+-*/':
+#             operations.add(char)
+#         elif 'A' <= char <= 'F':
+#             letters_af.add(char)
+#         elif 'X' <= char <= 'Z':
+#             letters_xz.add(char)
+#     return digits, operations, letters_af, letters_xz
+# sequence = "A+B*123XYZCD-456F"
+# print("Множества:", t(sequence))
+#
+#
+# #1б
+# def t(available_codes, all_codes=set(range(1, 21))):
+#     return all_codes - set(available_codes)
+# available = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+# print("Отсутствующие товары:", t(available))
+#
+#
+# #2а
+# def task2a(user_input):
+#     digits = set(char for char in user_input if char.isdigit())
+#     operations = set(char for char in user_input if char in '+-*/')
+#     return len(digits), len(operations)
+# user_input = "123+45-67*8"
+# print("Цифры и операции:", t(user_input))
+#
+#
+# #2б
+# def t(list1, list2):
+#     set1 = set(list1)
+#     set2 = set(list2)
+#     return set1 & set2
+# list1 = [1, 2, 3, 4, 5]
+# list2 = [4, 5, 6, 7, 8]
+# print("Общие элементы:", t(list1, list2))
+#
+#
+# #3а
+# def t(user_input):
+#     latin_letters = set(char for char in user_input if 'a' <= char <= 'z')
+#     punctuation = set(char for char in user_input if char in '.,!?;:')
+#     return latin_letters, len(punctuation)
+# user_input = "hello, world! test string."
+# print("Латинские буквы и знаки препинания:", t(user_input))
+#
+#
+# #3б
+# def t(setA, setB):
+#     return setA.issubset(setB)
+# A = {1, 2, 3}
+# B = {1, 2, 3, 4, 5}
+# print("A является подмножеством B:", t(A, B))
+#
+#
+# #4а
+# def t(sentence1, sentence2, sentence3):
+#     letters1 = set(char.lower() for char in sentence1 if char.isalpha())
+#     letters2 = set(char.lower() for char in sentence2 if char.isalpha())
+#     letters3 = set(char.lower() for char in sentence3 if char.isalpha())
+#     return letters1 & letters2 & letters3
+# s1 = "Hello world"
+# s2 = "World peace"
+# s3 = "Hello peace"
+# print("Общие буквы:", t(s1, s2, s3))
+#
+#
+# #4б
+# def t(university1, university2):
+#     subjects1 = set()
+#     subjects2 = set()
+#     for student in university1.values():
+#         subjects1.update(student['subjects'])
+#     for student in university2.values():
+#         subjects2.update(student['subjects'])
+#     only_uni1 = subjects1 - subjects2
+#     only_uni2 = subjects2 - subjects1
+#     return only_uni1, only_uni2
+# uni1 = {
+#     's1': {'subjects': ['Math', 'Physics']},
+#     's2': {'subjects': ['Chemistry', 'Biology']}
+# }
+# uni2 = {
+#     's3': {'subjects': ['Math', 'History']},
+#     's4': {'subjects': ['Art', 'Music']}
+# }
+# print("Предметы только одного университета:", t(uni1, uni2))
+#
+#
+# #5а
+# def t(num1, num2, num3):
+#     all_digits = set(str(num1) + str(num2) + str(num3))
+#     digit_digits = [int(d) for d in all_digits if d.isdigit()]
+#     return max(digit_digits) if digit_digits else None
+# print("Наибольшая цифра:", t(123, 456, 789))
+#
+#
+# #5б
+# def t(setA, setB):
+#     return setA.symmetric_difference(setB)
+# A = {1, 2, 3, 4}
+# B = {3, 4, 5, 6}
+# print("Элементы только в одном множестве:", t(A, B))
+#
+#
+# #6а
+# def t(text):
+#     digits = set(char for char in text if char.isdigit())
+#     return len(digits), sorted(digits)
+# text = "abc123def456ghi789"
+# print("Уникальные цифры:", t(text))
+#
+#
+# #6б
+# def t(purchases):
+#     all_products = set()
+#     multiple_products = set()
+#     for purchase in purchases.values():
+#         products = set(purchase['products'])
+#         multiple_products.update(all_products & products)
+#         all_products.update(products)
+#     return all_products - multiple_products
+# purchases = {
+#     'user1': {'products': ['laptop', 'mouse']},
+#     'user2': {'products': ['keyboard', 'mouse']},
+#     'user3': {'products': ['monitor']}
+# }
+# print(" Товары только одного пользователя:", t(purchases))
+#
+#
+# #7а
+# def t(sentence1, sentence2, sentence3):
+#     letters1 = set(char.lower() for char in sentence1 if char.isalpha())
+#     letters2 = set(char.lower() for char in sentence2 if char.isalpha())
+#     letters3 = set(char.lower() for char in sentence3 if char.isalpha())
+#     unique_to_1 = letters1 - letters2 - letters3
+#     unique_to_2 = letters2 - letters1 - letters3
+#     unique_to_3 = letters3 - letters1 - letters2
+#     return unique_to_1, unique_to_2, unique_to_3
+# s1 = "apple"
+# s2 = "banana"
+# s3 = "cherry"
+# print("Уникальные буквы:", t(s1, s2, s3))
+#
+#
+# #7б
+# def t(setA, setB):
+#     return setA.isdisjoint(setB)
+# A = {1, 2, 3}
+# B = {4, 5, 6}
+# C = {3, 4, 5}
+# print("A и B непересекаются:", t(A, B))
+# print("A и C непересекаются:", t(A, C))
+#
+#
+# #8а
+# def t(str1, str2, str3):
+#     available_chars = set(str1 + str2)
+#     needed_chars = set(str3)
+#     return needed_chars.issubset(available_chars)
+# str1 = "abc"
+# str2 = "def"
+# str3 = "bed"
+# print("Можно составить третью строку:", t(str1, str2, str3))
+#
+#
+# #8б
+# def t(employees):
+#     all_skills = set()
+#     multiple_skills = set()
+#     for employee in employees.values():
+#         skills = set(employee['skills'])
+#         multiple_skills.update(all_skills & skills)
+#         all_skills.update(skills)
+#     return all_skills - multiple_skills
+# employees = {
+#     'e1': {'skills': ['Python', 'Java']},
+#     'e2': {'skills': ['Java', 'C++']},
+#     'e3': {'skills': ['JavaScript']}
+# }
+# print("Навыки только одного сотрудника:", t(employees))
+#
+#
+# #9а
+# def t(text):
+#     russian_vowels = set('аеёиоуыэюя')
+#     found_vowels = set(char.lower() for char in text if char.lower() in russian_vowels)
+#     return sorted(found_vowels)
+# text = "Привет, это тестовый текст"
+# print("Русские гласные:", t(text))
+#
+#
+# #9б
+# def t(products):
+#     all_categories = set()
+#     multiple_categories = set()
+#     for product in products.values():
+#         categories = set(product['categories'])
+#         multiple_categories.update(all_categories & categories)
+#         all_categories.update(categories)
+#     return all_categories - multiple_categories
+# products = {
+#     'p1': {'categories': ['electronics', 'computers']},
+#     'p2': {'categories': ['computers', 'accessories']},
+#     'p3': {'categories': ['books']}
+# }
+# print("Категории с одним продуктом:", t(products))
+#
+#
+# #10а
+# def t(number):
+#     digits = set(str(number))
+#     digit_digits = [int(d) for d in digits if d.isdigit()]
+#     return sorted(digit_digits)
+# number = 1234554321
+# print("Уникальные цифры:", t(number))
+#
+#
+# #10б
+# def t(setA, setB):
+#     return setA.issubset(setB) and setA != setB
+# A = {1, 2, 3}
+# B = {1, 2, 3, 4, 5}
+# C = {1, 2, 3}
+# print("A - строгое подмножество B:", t(A, B))
+# print("A - строгое подмножество C:", t(A, C))
+#
+#
+# #11а
+# def t(text):
+#     vowels = set('aeiouаеёиоуыэюя')
+#     consonants = set('bcdfghjklmnpqrstvwxyzбвгджзйклмнпрстфхцчшщ')
+#     text_vowels = set(char.lower() for char in text if char.lower() in vowels)
+#     text_consonants = set(char.lower() for char in text if char.lower() in consonants)
+#     if len(text_vowels) > len(text_consonants):
+#         return "Гласных больше"
+#     elif len(text_vowels) < len(text_consonants):
+#         return "Согласных больше"
+#     else:
+#         return "Поровну"
+# text = "Hello World"
+# print("Каких букв больше:", t(text))
+#
+#
+# #11б
+# def t(orders, target_day):
+#     day_products = set()
+#     other_products = set()
+#     for order_id, order in orders.items():
+#         if order['day'] == target_day:
+#             day_products.update(order['products'])
+#         else:
+#             other_products.update(order['products'])
+#     return day_products - other_products
+# orders = {
+#     'o1': {'day': 'Monday', 'products': ['laptop', 'mouse']},
+#     'o2': {'day': 'Tuesday', 'products': ['keyboard', 'mouse']},
+#     'o3': {'day': 'Monday', 'products': ['monitor']}
+# }
+# print("Товары только в понедельник:", t(orders, 'Monday'))
+#
+#
+# #12а
+# def t(number):
+#     all_digits = set('0123456789')
+#     number_digits = set(str(number))
+#     return sorted(all_digits - number_digits)
+# number = 12345
+# print("Отсутствующие цифры:", t(number))
+#
+#
+# #12б
+# def t(setA, setB):
+#     return setA.issuperset(setB)
+# A = {1, 2, 3, 4, 5}
+# B = {1, 2, 3}
+# C = {1, 2, 6}
+# print("A - надмножество B:", t(A, B))
+# print("A - надмножество C:", t(A, C))
+#
+#
+# #13а
+# def t(setA, setB):
+#     return setA - setB
+# A = {1, 2, 3, 4, 5}
+# B = {3, 4, 5, 6, 7}
+# print("A без пересечения с B:", t(A, B))
+#
+#
+# #13б
+# def t(purchases):
+#     all_products = set()
+#     for purchase in purchases.values():
+#         all_products.update(purchase['products'])
+#     return all_products
+# purchases = {
+#     'p1': {'products': ['laptop', 'mouse']},
+#     'p2': {'products': ['keyboard', 'mouse']},
+#     'p3': {'products': ['monitor']}
+# }
+# print("Все купленные товары:", t(purchases))
+#
+#
+# #14а
+# def t(text):
+#     russian_consonants = set('бвгджзйклмнпрстфхцчшщ')
+#     text_consonants = set(char.lower() for char in text if char.lower() in russian_consonants)
+#     return sorted(russian_consonants - text_consonants)
+# text = "привет мир"
+# print("Отсутствующие согласные:", t(text))
+#
+#
+# #14б
+# def t(setA, setB):
+#     return setA == setB
+# A = {1, 2, 3}
+# B = {3, 2, 1}
+# C = {1, 2, 4}
+# print("A равно B:", t(A, B))
+# print("A равно C:", t(A, C))
+#
+#
+# #15а
+# def t(setA, setB):
+#     return len(setA & setB) > 0
+# A = {1, 2, 3}
+# B = {3, 4, 5}
+# C = {6, 7, 8}
+# print("A и B имеют общие элементы:", t(A, B))
+# print("A и C имеют общие элементы:", t(A, C))
+#
+#
+# #15б
+# def t(university1, university2):
+#     subjects1 = set()
+#     subjects2 = set()
+#     for student in university1.values():
+#         subjects1.update(student['subjects'])
+#     for student in university2.values():
+#         subjects2.update(student['subjects'])
+#     return subjects1 & subjects2
+# uni1 = {
+#     's1': {'subjects': ['Math', 'Physics', 'Chemistry']},
+#     's2': {'subjects': ['Biology', 'Math']}
+# }
+# uni2 = {
+#     's3': {'subjects': ['Math', 'History']},
+#     's4': {'subjects': ['Physics', 'Art']}
+# }
+# print("Предметы в обоих университетах:", t(uni1, uni2))
